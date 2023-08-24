@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ostafii4uk/vakolyuk-personal-trainer.git"
+    "url": "git+https://github.com/Ostafii4uk/vakoliuk-personal-trainer.git"
   },
   "keywords": [],
   "author": "Nazar Ostafiichuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ostafii4uk/vakolyuk-personal-trainer/issues"
+    "url": "https://github.com/Ostafii4uk/vakoliuk-personal-trainer/issues"
   },
-  "homepage": "https://github.com/Ostafii4uk/vakolyuk-personal-trainer#readme",
+  "homepage": "https://github.com/Ostafii4uk/vakoliuk-personal-trainer#readme",
   "description": "Landing page for personal trainer Serhii Vakoliuk"
 }
