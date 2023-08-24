@@ -1,0 +1,31 @@
+{
+  "name": "vakolyuk_v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.11",
+    "postcss": "^8.4.28",
+    "sass": "^1.66.1"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build index.html --no-source-maps --public-url ./",
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ostafii4uk/vakolyuk-personal-trainer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ostafii4uk/vakolyuk-personal-trainer/issues"
+  },
+  "homepage": "https://github.com/Ostafii4uk/vakolyuk-personal-trainer#readme",
+  "description": ""
+}

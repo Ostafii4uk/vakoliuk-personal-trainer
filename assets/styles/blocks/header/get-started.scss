@@ -1,0 +1,39 @@
+.get-started {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 150px;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover .get-started__play-button svg path {
+      fill: #5aba4a;
+    }
+
+    &:active .get-started__play-button svg path {
+      fill: white;
+    }
+  }
+
+  &__play-button {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #f97239;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s linear;
+  }
+
+  &__link {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

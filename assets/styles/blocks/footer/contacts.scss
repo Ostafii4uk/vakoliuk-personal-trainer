@@ -1,0 +1,33 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 14px;
+  }
+
+  &__icon {
+    transition: all 0.2s linear;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: #5aba4a;
+
+      .contacts__icon {
+        fill: #fff;
+      }
+    }
+  }
+}

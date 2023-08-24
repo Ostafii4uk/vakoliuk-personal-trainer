@@ -1,0 +1,44 @@
+.results {
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 49px;
+    text-align: center;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    background: #030712;
+    box-shadow: 8px 8px 40px rgba(23, 23, 23, 0.25);
+  }
+
+  &__quotes {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 60px;
+    transform: translate(-50%, 10px);
+  }
+
+  &__photo-container {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: #030712;
+  }
+
+  &__photo {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  &__feedback {
+    padding: 60px 45px 0;
+    width: 50%;
+  }
+}
