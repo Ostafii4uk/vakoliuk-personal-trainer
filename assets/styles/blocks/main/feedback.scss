@@ -1,4 +1,5 @@
 .feedback {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +26,9 @@
   }
 
   &__buttons {
+    position: absolute;
+    bottom: 25%;
+    z-index: 100;
     display: flex;
     gap: 30px;
   }

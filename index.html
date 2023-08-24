@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERHII VAKOLIUK</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/styles/main.scss">
   </head>
   <body id="app">
@@ -165,25 +166,17 @@
               </div>
             </div>
           </div>
-          <div class="join-me__photos">
-            <div class="join-me__left-side">
-              <img
-                class="join-me__left-side-img"
-                src="assets/img/main/join-me/IMG_0117.JPG"
-                alt="Personal training"
-              >
-              <img
-                class="join-me__left-side-img"
-                src="assets/img/main/join-me/IMG_0118.JPG"
-                alt="Personal training"
-              >
-            </div>
-            <div class="join-me__right-side">
-              <img
-                class="join-me__right-side-img"
-                src="assets/img/main/join-me/IMG_0120.JPG"
-                alt="Personal training"
-              >
+          <div class="join-me__photos swiper join-me-photos-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/IMG_0117.JPG" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/IMG_0118.JPG" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/IMG_0120.JPG" alt="Personal training">
+              </div>
             </div>
           </div>
         </div>
@@ -271,22 +264,50 @@
         <h2 class="results__title">Результати моїх підопічних</h2>
         <div class="results__container">
           <img class="results__quotes" src="./assets/svg/main/results/quotes.svg" alt="Quotes">
-          <div class="results__photo-container">
-            <img class="results__photo" src="./assets/img/main/results/NO.jpg" alt="NO">
+          <div class="results__photo-container swiper results-photo-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/NO.jpg" alt="NO">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/join-me/IMG_0117.JPG" alt="NO">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/join-me/IMG_0118.JPG" alt="NO">
+              </div>
+            </div>
           </div>
           <div class="results__feedback feedback">
-            <h3 class="feedback__title">Назар Остафічук</h3>
-            <p class="feedback__description">
-              Assets learning curve vesting period direct mailing scrum project ramen user experience first mover advantage infographic early adopters. Sales marketing freemium termsheet MVP interaction design focus early adopters hypotheses creative facebook nondisclosure agreement android prototype.
-            </p>
+            <div class="swiper results-feedback-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Назар Остафічук</h3>
+                  <p class="feedback__description">
+                    Assets learning curve vesting period direct mailing scrum project ramen user experience first mover advantage infographic early adopters. Sales marketing freemium termsheet MVP interaction design focus early adopters hypotheses creative facebook nondisclosure agreement android prototype.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Сергій</h3>
+                  <p class="feedback__description">
+                    Текс 2
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Сергій 2</h3>
+                  <p class="feedback__description">
+                    Текст 3
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="feedback__buttons">
-              <button class="feedback__button feedback__button--left">
+              <button id="swiper-button-prev" class="feedback__button feedback__button--left">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="feedback__button-hover" d="M12.3178 6.49133L1.4165 6.49133" stroke="#5ABA4A" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
                   <path class="feedback__button-hover" d="M6.86711 11.8148L1.4165 6.49115L6.86711 1.16748" stroke="#5ABA4A" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
-              <button class="feedback__button feedback__button--right">
+              <button id="swiper-button-next" class="feedback__button feedback__button--right">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="feedback__button-hover" d="M12.3178 6.49133L1.4165 6.49133" stroke="#5ABA4A" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
                   <path class="feedback__button-hover" d="M6.86711 11.8148L1.4165 6.49115L6.86711 1.16748" stroke="#5ABA4A" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
@@ -429,6 +450,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
