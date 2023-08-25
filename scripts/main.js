@@ -5,7 +5,8 @@ const joinMePhotosSwiper = new Swiper(".join-me-photos-swiper", {
   loop: true,
   spaceBetween: 100,
   autoplay: {},
-  effect: 'fade',
+  waitForTransition: true,
+  effect: "fade",
   fadeEffect: {
     crossFade: true
   }
