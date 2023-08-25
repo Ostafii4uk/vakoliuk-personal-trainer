@@ -1,5 +1,17 @@
 'use strict';
 
+const mobileNavbar = document.getElementById('mobile-navbar')
+const hamburger = document.getElementById('hamburger');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle('header__hamburger-lines--active')
+  mobileNavbar.classList.toggle('header__mobile-navbar--show')
+})
+const mobileNavbarItem = document.getElementsByClassName('mobile-navbar__item')
+mobileNavbar.addEventListener('click', () => {
+  hamburger.classList.remove('header__hamburger-lines--active')
+  mobileNavbar.classList.remove('header__mobile-navbar--show')
+})
+
 const joinMePhotosSwiper = new Swiper(".join-me-photos-swiper", {
   slidesPerView: 1,
   loop: true,

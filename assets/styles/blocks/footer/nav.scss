@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
+  @include onTablet {
+    justify-content: space-between;
+  }
+
   &__block {
     display: flex;
     flex-direction: column;

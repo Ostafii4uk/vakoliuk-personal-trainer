@@ -8,5 +8,10 @@
     gap: 110px;
     justify-content: space-between;
     padding: 0 60px 45px;
+
+    @include onTablet {
+      gap: 50px;
+      padding: 0 30px 45px;
+    }
   }
 }

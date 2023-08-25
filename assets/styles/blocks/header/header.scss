@@ -1,4 +1,5 @@
 .header {
+  overflow: hidden;
   position: relative;
   background: linear-gradient(
     300deg,
@@ -22,6 +23,60 @@
     }
   }
 
+  &__hamburger-lines {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      height: 16px;
+      width: 21px;
+      top: 0;
+      right: 0;
+      z-index: 300000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &--active .header__line--1 {
+        transform: rotate(45deg);
+      }
+
+      &--active .header__line--2 {
+        transform: scaleY(0);
+      }
+
+      &--active .header__line--3 {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+
+    &--1,
+    &--2,
+    &--3 {
+      transition: transform 0.4s ease-in-out;
+    }
+
+    &--1 {
+      transform-origin: 0% 0%;
+    }
+
+    &--2 {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &--3 {
+      transform-origin: 0% 100%;
+    }
+  } 
+
   &__content {
     flex: 1 1 auto;
     display: flex;
@@ -35,8 +90,12 @@
       padding: 15px;
       position: relative;
       z-index: 100;
-      top: 30px;
+      height: 95%;
+      top: 10px;
       background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
     }
   }
 
@@ -69,12 +128,19 @@
   }
 
   &__photo {
-    height: 600px;
+    border-radius: 5px;
+    height: calc(100vh - 120px);
+    box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     @include onTablet {
       position: absolute;
-      height: auto;
-      width: 300px;
+      object-fit: cover;
+      width: 84%;
       top: 80px;
     }
   }
@@ -113,6 +179,7 @@
       -webkit-animation: vawe 2s infinite;
       animation: vawe 2s infinite;
       box-sizing: border-box;
+      z-index: 10000;
     }
   
     @-webkit-keyframes vawe {
@@ -186,5 +253,21 @@
 
   &__video-content {
     position: relative;
+  }
+
+  &__mobile-navbar {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    transform: translateX(145%);
+    z-index: 20000;
+    background: linear-gradient(300deg, rgb(1, 5, 13) 50%, rgb(35, 47, 63) 80%, rgb(28, 44, 64) 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    transition: transform 0.3s ease-in-out;
+
+    &--show {
+      transform: translateX(45%);
+    }
   }
 }

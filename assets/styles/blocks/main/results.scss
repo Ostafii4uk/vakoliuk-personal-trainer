@@ -13,6 +13,10 @@
     display: flex;
     background: #030712;
     box-shadow: 8px 8px 40px rgba(23, 23, 23, 0.25);
+
+    @include onTablet {
+      flex-direction: column;
+    }
   }
 
   &__quotes {
@@ -31,6 +35,11 @@
     justify-content: center;
     width: 50%;
     background: #030712;
+
+    @include onTablet {
+      padding: 60px 30px 0;
+      width: 100%;
+    }
   }
 
   &__photo {
@@ -38,10 +47,20 @@
     height: 480px;
     border-radius: 4px;
     object-fit: cover;
+
+    @include onTablet {
+      width: 100%;
+      min-width: 330px;
+    }
   }
 
   &__feedback {
     padding: 60px 45px 0;
     width: 50%;
+
+    @include onTablet {
+      padding: 30px;
+      width: 100%;
+    }
   }
 }

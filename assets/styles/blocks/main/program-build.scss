@@ -1,9 +1,12 @@
 .program-build {
-  padding: 100px 60px 0;
+  padding: 100px 60px;
+
+  @include onTablet {
+    padding: 100px 30px
+  }
 
   &__container {
     @include container();
-    margin-bottom: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

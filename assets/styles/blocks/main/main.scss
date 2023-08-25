@@ -2,9 +2,18 @@
   padding-bottom: 50px;
   background-color: #192023;
 
+  @include onTablet {
+    padding-bottom: 0;
+  }
+
   &__join-me {
     padding: 0 60px;
     margin-bottom: 150px;
+
+    @include onTablet {
+      padding: 0 30px;
+      margin-bottom: 100px;
+    }
   }
 
   &__pricing-plan {
@@ -19,5 +28,9 @@
   &__write-me {
     padding: 100px 0;
     margin: 0 60px;
+
+    @include onTablet {
+      margin: 0;
+    }
   }
 }
