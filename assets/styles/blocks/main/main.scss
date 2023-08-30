@@ -1,5 +1,4 @@
 .main {
-  padding-bottom: 50px;
   background-color: #192023;
 
   @include onTablet {
@@ -7,18 +6,15 @@
   }
 
   &__join-me {
-    padding: 0 60px;
-    margin-bottom: 150px;
+    padding: 100px 60px;
 
     @include onTablet {
-      padding: 0 30px;
-      margin-bottom: 100px;
+      padding: 100px 30px;
     }
   }
 
   &__pricing-plan {
     padding: 0 60px;
-    margin-bottom: 100px;
   }
 
   &__results {

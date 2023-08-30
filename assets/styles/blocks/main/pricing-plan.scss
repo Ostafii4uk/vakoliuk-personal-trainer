@@ -7,24 +7,10 @@
 
   &__title {
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 32px;
     line-height: 49px;
-  }
-
-  &__description {
-    margin: 0 auto;
-    text-align: center;
-    width: 500px;
-    margin-bottom: 35px;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 18px;
-
-    @include onTablet {
-      width: auto;
-    }
   }
 
   &__cards {
@@ -47,8 +33,10 @@
   }
 
   &__card {
-    padding: 40px 45px 30px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 30px;
+    width: 270px;
     background: linear-gradient(
       300deg,
       rgba(1,5,13,1) 50%,
@@ -91,7 +79,8 @@
   }
 
   &__achievements {
-    margin-bottom: 55px;
+    flex: 1 1 auto;
+    margin-bottom: 70px;
     display: flex;
     flex-direction: column;
     gap: 10px;

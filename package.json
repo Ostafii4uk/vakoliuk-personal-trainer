@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Landing page for personal trainer Serhii Vakoliuk",
   "main": "script/main.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "sass": "^1.66.1"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "parcel index.html"
   },
