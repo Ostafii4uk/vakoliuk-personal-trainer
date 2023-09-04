@@ -10,10 +10,6 @@
     align-items: center;
     gap: 10px;
 
-    &:hover .get-started__play-button svg path {
-      fill: #5aba4a;
-    }
-
     &:active .get-started__play-button svg path {
       fill: white;
     }
@@ -22,10 +18,10 @@
   &__play-button {
     display: flex;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 25%;
     justify-content: center;
-    background-color: #f97239;
-    width: 24px;
+    background-color: #ff0000;
+    width: 34px;
     height: 24px;
     transition: all 0.2s linear;
   }

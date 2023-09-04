@@ -50,13 +50,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #5aba4a;
+    border: 1px solid #f97239;
     border-radius: 50%;
     transition: all 0.3s linear;
 
     &:hover {
       cursor: pointer;
-      background-color: #5aba4a;
+      background-color: #f97239;
 
       .feedback__button-hover {
         stroke: #2a2c52;
