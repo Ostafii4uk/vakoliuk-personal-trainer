@@ -22,6 +22,10 @@
 
   &__button {
     margin: 0 auto;
+    padding: 8px;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
     padding: 8px 60px;
     color: #f97239;
     border: solid 1px #f97239;
@@ -56,8 +60,17 @@
       transform: scale(1.05);
 
       & .pricing-plan__button {
+        transition: all 0.2s linear;
+      }
+
+      & .pricing-plan__button:hover {
         color: #fff;
         border-color: #fff;
+      }
+
+      & .pricing-plan__button:active {
+        color: #f97239;
+        border-color: #f97239;
       }
     }
 
@@ -75,6 +88,7 @@
       font-weight: 700;
       font-size: 28px;
       line-height: 18px;
+      color: #f97239;
     }
   }
 

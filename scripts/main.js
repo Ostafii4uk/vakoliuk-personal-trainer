@@ -28,12 +28,14 @@ const resultsPhotoSwiper = new Swiper(".results-photo-swiper", {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 100,
+  allowTouchMove: false
 })
 
 const resultsFeedbackSwiper = new Swiper(".results-feedback-swiper", {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 100,
+  allowTouchMove: false
 })
 
 const swiperButtonPrev = document.getElementById('swiper-button-prev')
