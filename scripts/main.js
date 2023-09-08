@@ -53,12 +53,6 @@ swiperButtonNext.addEventListener('click', () => {
 })
 
 const body = document.getElementById('app')
-const popupWindow = document.getElementById('header-popup');
-
-popupWindow.addEventListener('click', () => {
-  popupWindow.classList.remove('header__popup--visible');
-  body.classList.remove('stop-scrolling');
-});
 
 const setVh = () => {
   const vh = window.innerHeight * 0.01;
