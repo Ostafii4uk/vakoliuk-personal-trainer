@@ -36,13 +36,20 @@
   }
 
   &__description {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+    text-align: center;
+  }
+
+  &__link {
+    width: 28px !important;
+    height: 28px !important;
   }
 
   &__form {
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     gap: 6px;

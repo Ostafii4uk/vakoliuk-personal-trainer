@@ -5,11 +5,13 @@ const hamburger = document.getElementById('hamburger');
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle('header__hamburger-lines--active')
   mobileNavbar.classList.toggle('header__mobile-navbar--show')
+  body.classList.toggle('stop-scrolling');
 })
 const mobileNavbarItem = document.getElementsByClassName('mobile-navbar__item')
 mobileNavbar.addEventListener('click', () => {
   hamburger.classList.remove('header__hamburger-lines--active')
   mobileNavbar.classList.remove('header__mobile-navbar--show')
+  body.classList.remove('stop-scrolling');
 })
 
 const joinMePhotosSwiper = new Swiper(".join-me-photos-swiper", {
@@ -51,15 +53,17 @@ swiperButtonNext.addEventListener('click', () => {
 })
 
 const body = document.getElementById('app')
-const playMeBtn = document.getElementById('play-about-me');
 const popupWindow = document.getElementById('header-popup');
-
-playMeBtn.addEventListener('click', () => {
-  popupWindow.classList.add('header__popup--visible');
-  body.classList.add('stop-scrolling');
-});
 
 popupWindow.addEventListener('click', () => {
   popupWindow.classList.remove('header__popup--visible');
   body.classList.remove('stop-scrolling');
 });
+
+const setVh = () => {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+};
+
+window.addEventListener('load', setVh);
+window.addEventListener('resize', setVh);

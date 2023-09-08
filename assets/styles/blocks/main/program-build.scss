@@ -2,7 +2,7 @@
   padding: 100px 60px;
 
   @include onTablet {
-    padding: 100px 30px
+    padding: 0 30px 100px;
   }
 
   &__container {
