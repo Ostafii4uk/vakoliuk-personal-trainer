@@ -10,8 +10,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 
     @include onTablet {
-      padding: 30px;
-      height: 450px;
+      padding: 60px 30px;
+      height: 100%;
     }
   }
 
@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
 
-    @include onTablet {
+    @media (max-width: 968px) {
       width: auto;
     }
   }
@@ -40,6 +40,10 @@
   &__description {
     margin-bottom: 40px;
     font-weight: normal;
+
+    @include onTablet {
+      text-align: center;
+    }
   }
 
   &__achievements {
@@ -63,8 +67,8 @@
     background: #030712;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 
-    @include onTablet {
-      display: none;
+    @media (max-width: 968px) {
+      width: 100%;
     }
   }
 
