@@ -15,10 +15,9 @@
     height: 100vh;
     @include container ();
     position: relative;
-    padding: 30px 60px 0;
+    padding: 30px 60px;
 
     @include onTablet {
-      height: 100vh;
       padding: 0;
     }
   }
@@ -85,33 +84,40 @@
   } 
 
   &__content {
-    position: relative;
-    flex: 1 1 auto;
     display: flex;
+    height: 100%;
+    padding: 30px 0;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+
+    @include onTablet {
+      flex-direction: column;
+      gap: 50px;
+      padding: 0 30px 30px;
+      height: calc(100vh - 80px);
+    }
   }
 
   &__text {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
     @include onTablet {
-      padding: 0 30px;
-      position: relative;
-      z-index: 100;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      width: 100%;
     }
   }
 
   &__title {
-    margin: 90px 0;
-    width: 500px;
-    font-weight: bolder;
+    font-weight: 800;
     font-size: 50px;
     line-height: 65px;
+    border-radius: 5px;
+    padding: 0 30px;
+    text-shadow: 10px 5px 5px black;
 
     @include onTablet {
       width: auto;
@@ -120,22 +126,29 @@
       line-height: 50px;
       font-weight: 400;
       margin: 0 auto;
+      padding: 0;
+    }
+  }
+  
+  &__wrapper-photo {
+    width: 50%;
+    border-radius: 5px;
+    filter: drop-shadow(0.1rem 0.2rem 1rem rgba(0, 0, 0, 1));
+
+    @include onTablet {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
     }
   }
 
   &__photo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 5px;
-    height: 85vh;
-    filter: drop-shadow(0.1rem 0.2rem 1rem rgba(0, 0, 0, 1));
+    height: 100%;
+    width: 100%;
 
     @include onTablet {
-      position: absolute;
-      object-fit: cover;
-      width: 100%;
-      top: 80px;
+      transform: scale(1.25);
+      object-fit: contain;
     }
   }
 
@@ -161,7 +174,7 @@
   &__footer {
     #scroll-down a span {
       position: absolute;
-      bottom: 54px;
+      bottom: 34px;
       left: 50%;
       width: 24px;
       height: 24px;

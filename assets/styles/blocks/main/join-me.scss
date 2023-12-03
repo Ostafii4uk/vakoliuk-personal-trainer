@@ -37,6 +37,11 @@
     }
   }
 
+  &__description {
+    margin-bottom: 40px;
+    font-weight: normal;
+  }
+
   &__achievements {
     display: flex;
     flex-direction: column;
@@ -64,8 +69,8 @@
   }
 
   &__photo {
-    width: 420px;
-    height: 500px;
-    object-fit: cover;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
   }
 }
