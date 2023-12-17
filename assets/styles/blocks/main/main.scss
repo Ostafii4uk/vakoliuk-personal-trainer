@@ -6,7 +6,7 @@
   }
 
   &__join-me {
-    padding: 100px 60px 0;
+    padding: 100px 60px;
 
     @include onTablet {
       padding: 100px 30px;
@@ -23,7 +23,7 @@
   }
 
   &__write-me {
-    padding: 100px 0;
+    padding: 0 0 100px;
 
     @include onTablet {
       margin: 0;

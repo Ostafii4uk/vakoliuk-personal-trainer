@@ -304,7 +304,7 @@
       <div class="main__pricing-plan pricing-plan" id="pricing-plan">
         <div class="pricing-plan__container">
           <h2 class="pricing-plan__title">Ціни</h2>
-          <h3>Онлайн ведення</h3>
+          <h3 id='online-coaching'>Онлайн ведення</h3>
           <div class="pricing-plan__cards">
             <div class="pricing-plan__card">
               <h3 class="pricing-plan__card-title">12 тренувань</h3>
@@ -369,7 +369,7 @@
               <a class="pricing-plan__button" href="https://t.me/s_vakoliuk" target="_blank">Купити зараз</a>
             </div>
           </div>
-          <h3>Без ведення тренера</h3>
+          <h3 id='online-training'>Без ведення тренера</h3>
           <div class="pricing-plan__cards">
             <div class="pricing-plan__card">
               <h3 class="pricing-plan__card-title">12 тренувань</h3>
@@ -394,7 +394,7 @@
               <a class="pricing-plan__button" href="https://t.me/s_vakoliuk" target="_blank">Купити зараз</a>
             </div>
           </div>
-          <h3>Програма  збалансованого харчування</h3>
+          <h3 id='food-program'>Програма  збалансованого харчування</h3>
           <div class="pricing-plan__cards">
             <div class="pricing-plan__card">
               <p class="pricing-plan__card-price">₴950</p>
@@ -417,10 +417,55 @@
           </div>
         </div>
       </div>
+      <div class="main__join-me join-me" id="personal-trainer-course">
+        <div class="join-me__container">
+          <div class="join-me__information" style='width: auto'>
+            <h2 class="join-me__title">Курс персональний тренер</h2>
+            <h3 class="join-me__description">
+              Вивчення:
+            </h3>
+            <div class="join-me__achievements">
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Анатомії та біомеханіки</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Нутріціології (Складання раціону та розрахунок БЖВ)</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Спортивного харчування (тобто дієтичні добавки, вітаміни тощо)</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Підхід до підопічного</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
       <div class="main__write-me write-me" id="write-me">
         <div class="write-me__container">
           <h2 class="write-me__title">Почни тренування прямо зараз</h2>
-          <p class="write-me__description">Напиши мені або залиш свої дані і я тобі як най швидше відпишу.</p>
+          <p class="write-me__description">Спробувавши безкоштовну програму на тиждень</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link write-me__link" href="https://www.instagram.com/serhii_vakoliuk" target="_blank">
@@ -449,10 +494,6 @@
               </a>
             </li>
           </ul>
-          <div class="write-me__form">
-            <input class="write-me__input" type="text" placeholder="Напиши свій номер або залиш інстаграм">
-            <button class="write-me__button button">Надіслати</button>
-          </div>
           <img
             class="write-me__background-ellipse write-me__background-ellipse--left"
             src="assets/svg/header/ellipse.svg"
@@ -505,46 +546,26 @@
         </div>
         <div class="footer__nav nav">
           <div class="nav__block">
-            <h4 class="nav__title">Програми</h4>
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#program-build">
-                  <p class="nav__item-title">Сила</p>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#program-build">
-                  <p class="nav__item-title">Фізична підготовка</p>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#program-build">
-                  <p class="nav__item-title">Нарощення м'язів</p>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#program-build">
-                  <p class="nav__item-title">Схуднення</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav__block">
             <h4 class="nav__title">Ціни</h4>
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#pricing-plan">
-                  <p class="nav__item-title">Базовий</p>
+                <a class="nav__link" href="#online-coaching">
+                  <p class="nav__item-title">Онлайн ведення</p>
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#pricing-plan">
-                  <p class="nav__item-title">Тижневий</p>
+                <a class="nav__link" href="#online-training">
+                  <p class="nav__item-title">Без ведення тренера</p>
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#pricing-plan">
-                  <p class="nav__item-title">Місячний</p>
+                <a class="nav__link" href="#food-program">
+                  <p class="nav__item-title">Програма збалансованого харчування</p>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#personal-trainer-course">
+                  <p class="nav__item-title">Курс персональний тренер</p>
                 </a>
               </li>
             </ul>
