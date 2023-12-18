@@ -93,7 +93,6 @@
 
     @include onTablet {
       flex-direction: column;
-      gap: 50px;
       padding: 0 30px 60px;
       height: calc(100vh - 80px);
     }
@@ -112,7 +111,7 @@
   }
 
   &__title {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 50px;
     line-height: 65px;
     border-radius: 5px;
