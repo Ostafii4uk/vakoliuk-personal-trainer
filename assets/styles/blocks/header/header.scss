@@ -84,7 +84,9 @@
   } 
 
   &__content {
+    position: relative;
     display: flex;
+    gap: 50px;
     height: 100%;
     padding: 30px 0;
     flex: 1 1 auto;
@@ -93,48 +95,60 @@
 
     @include onTablet {
       flex-direction: column;
+      gap: 20px;
       padding: 0 30px 60px;
       height: calc(100vh - 80px);
     }
   }
 
   &__text {
-    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    z-index: 100;
     gap: 200px;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    transform: translate(-50%, -95%);
 
     @include onTablet {
       width: 100%;
+      top: 90%;
+      transform: translate(-50%, -90%);
     }
   }
 
   &__title {
+    text-align: center;
     font-weight: 900;
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 70px;
+    line-height: 120px;
     border-radius: 5px;
     padding: 0 30px;
+
+    @media (max-width: 968px) {
+      font-size: 50px;
+    }
 
     @include onTablet {
       width: auto;
       text-align: center;
       font-size: 30px;
       line-height: 50px;
-      font-weight: 400;
+      font-weight: 600;
       margin: 0 auto;
-      padding: 0;
     }
   }
   
   &__wrapper-photo {
-    width: 50%;
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
+    color: #f97239;
     filter: drop-shadow(0.1rem 0.2rem 1rem rgba(0, 0, 0, 1));
 
     @include onTablet {
-      height: 100%;
       width: 100%;
       overflow: hidden;
     }
@@ -143,10 +157,17 @@
   &__photo {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: 0 -260px;
+
+    @media (max-width: 968px) {
+      object-position: 0 -160px;
+    }
 
     @include onTablet {
       transform: scale(1.25);
-      object-fit: contain;
+      object-fit: cover;
+      object-position: center;
     }
   }
 
