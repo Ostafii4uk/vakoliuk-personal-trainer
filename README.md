@@ -1,1 +1,3 @@
-# Landing page for personal trainer Serhii Vakoliuk
+# Serhii Vakoliuk - personal trainer
+
+## [Web page](https://serhiivakoliuk.com/)
