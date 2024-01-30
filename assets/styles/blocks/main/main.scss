@@ -1,0 +1,32 @@
+.main {
+  background-color: #192023;
+
+  @include onTablet {
+    padding-bottom: 0;
+  }
+
+  &__join-me {
+    padding: 100px 60px;
+
+    @include onTablet {
+      padding: 100px 30px;
+    }
+  }
+
+  &__pricing-plan {
+    padding: 0 60px;
+  }
+
+  &__results {
+    padding-bottom: 100px;
+    @include container();
+  }
+
+  &__write-me {
+    padding: 0 0 100px;
+
+    @include onTablet {
+      margin: 0;
+    }
+  }
+}

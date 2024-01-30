@@ -1,1 +1,1 @@
-# vakolyuk-personal-trainer
+# Landing page for personal trainer Serhii Vakoliuk

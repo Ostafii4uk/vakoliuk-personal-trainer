@@ -1,0 +1,109 @@
+.pricing-plan {
+  &__container {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 49px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__button {
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 60px;
+    color: #f97239;
+    border: solid 1px #f97239;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 30px;
+    width: 350px;
+    background: linear-gradient(
+      300deg,
+      rgba(1,5,13,1) 50%,
+      rgba(35,47,63,1) 80%,
+      rgba(28,44,64,1) 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: linear-gradient(
+        300deg,
+        rgb(29, 13, 6) 50%,
+        rgb(45, 24, 14) 80%,
+        rgb(68, 31, 15) 100%
+      );
+      transform: scale(1.05);
+
+      & .pricing-plan__button {
+        transition: all 0.2s linear;
+      }
+
+      & .pricing-plan__button:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+
+      & .pricing-plan__button:active {
+        color: #f97239;
+        border-color: #f97239;
+      }
+    }
+
+    &-title {
+      margin-bottom: 35px;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    &-price {
+      margin-bottom: 30px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 18px;
+      color: #f97239;
+    }
+  }
+
+  &__achievements {
+    flex: 1 1 auto;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__achievement {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}

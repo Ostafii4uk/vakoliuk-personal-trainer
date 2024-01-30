@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERHII VAKOLIUK</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles/main.scss">
+  </head>
+  <body id="app">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__navbar navbar">
+          <div class="navbar__logo logo">
+            <a href="#">
+              <span class="logo__title">Serhii Vakoliuk</span></span>
+            </a>
+          </div>
+          <nav class="navbar__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#join-me">Про мене</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#personal-trainer-course">Програми</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#pricing-plan">Ціни</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#results">Результати</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#write-me">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="hamburger" class="header__hamburger-lines">
+            <span class="header__line header__line--1"></span>
+            <span class="header__line header__line--2"></span>
+            <span class="header__line header__line--3"></span>
+          </div>
+        </div>
+        <div class="header__content">
+          <div class="header__text">
+            <p class="header__title">Тренуйся як належить</p>
+          </div>
+          <div class="header__wrapper-photo">
+            <img
+              class="header__photo"
+              src="assets/img/header.jpg"
+              alt="Sergiy"
+            >
+          </div>
+        </div>
+        <div class="header__footer">
+          <section id="scroll-down">
+            <a href="#join-me"><span></span></a>
+          </section>
+        </div>
+      </div>
+      <nav id="mobile-navbar" class="header__mobile-navbar mobile-navbar">
+        <ul class="mobile-navbar__list">
+          <li class="mobile-navbar__item">
+            <a class="mobile-navbar__link" href="#program-build">Програми</a>
+          </li>
+          <li class="mobile-navbar__item">
+            <a class="mobile-navbar__link" href="#join-me">Про мене</a>
+          </li>
+          <li class="mobile-navbar__item">
+            <a class="mobile-navbar__link" href="#pricing-plan">Ціни</a>
+          </li>
+          <li class="mobile-navbar__item">
+            <a class="mobile-navbar__link" href="#results">Результати</a>
+          </li>
+          <li class="mobile-navbar__item">
+            <a class="mobile-navbar__link" href="#write-me">Контакти</a>
+          </li>
+          <li class="mobile-navbar__item">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link write-me__link" href="https://www.instagram.com/serhii_vakoliuk" target="_blank">
+                  <svg class="contacts__icon" width="18" height="18" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="contacts__icon" d="M11.304 3.32916C11.298 2.87084 11.2132 2.41708 11.0533 1.98818C10.9148 1.6264 10.7031 1.29784 10.4318 1.02349C10.1606 0.749144 9.83571 0.535041 9.47801 0.394861C9.0594 0.235926 8.61716 0.149988 8.17011 0.140704C7.59454 0.114684 7.41206 0.107422 5.951 0.107422C4.48994 0.107422 4.30267 0.107422 3.73129 0.140704C3.28445 0.150056 2.84241 0.235994 2.42399 0.394861C2.06624 0.534943 1.74133 0.749012 1.47007 1.02337C1.1988 1.29773 0.98715 1.62634 0.848648 1.98818C0.691193 2.41125 0.606408 2.85843 0.597958 3.3104C0.572231 3.89314 0.564453 4.07771 0.564453 5.55545C0.564453 7.03319 0.564453 7.22199 0.597958 7.8005C0.606933 8.25314 0.691294 8.69973 0.848648 9.12393C0.987382 9.48565 1.19919 9.81413 1.47055 10.0884C1.7419 10.3626 2.06684 10.5766 2.42459 10.7166C2.84186 10.882 3.28398 10.9741 3.73188 10.9889C4.30805 11.015 4.49054 11.0228 5.9516 11.0228C7.41266 11.0228 7.59993 11.0228 8.17131 10.9889C8.61834 10.98 9.06061 10.8943 9.47921 10.7354C9.83681 10.5951 10.1616 10.3809 10.4328 10.1066C10.704 9.83224 10.9158 9.50376 11.0545 9.14208C11.2119 8.71848 11.2963 8.2719 11.3052 7.81865C11.331 7.23651 11.3387 7.05194 11.3387 5.5736C11.3375 4.09586 11.3375 3.90827 11.304 3.32916ZM5.94741 8.34996C4.41934 8.34996 3.18144 7.09793 3.18144 5.55242C3.18144 4.00691 4.41934 2.75488 5.94741 2.75488C6.68099 2.75488 7.38452 3.04962 7.90324 3.57426C8.42196 4.0989 8.71338 4.81047 8.71338 5.55242C8.71338 6.29437 8.42196 7.00594 7.90324 7.53058C7.38452 8.05522 6.68099 8.34996 5.94741 8.34996ZM8.82346 3.30374C8.73874 3.30382 8.65484 3.287 8.57655 3.25425C8.49826 3.22149 8.42713 3.17345 8.36722 3.11285C8.30732 3.05226 8.25981 2.98032 8.22743 2.90114C8.19504 2.82196 8.17841 2.7371 8.17849 2.65141C8.17849 2.56578 8.19517 2.48099 8.22756 2.40189C8.25996 2.32278 8.30745 2.2509 8.36731 2.19035C8.42718 2.1298 8.49824 2.08178 8.57646 2.04901C8.65467 2.01624 8.73851 1.99937 8.82317 1.99937C8.90783 1.99937 8.99166 2.01624 9.06987 2.04901C9.14809 2.08178 9.21916 2.1298 9.27902 2.19035C9.33888 2.2509 9.38637 2.32278 9.41877 2.40189C9.45116 2.48099 9.46784 2.56578 9.46784 2.65141C9.46784 3.01207 9.17946 3.30374 8.82346 3.30374Z" fill="#192023"/>
+                    <path class="contacts__icon" d="M5.94759 7.36979C6.93989 7.36979 7.7443 6.55619 7.7443 5.55257C7.7443 4.54895 6.93989 3.73535 5.94759 3.73535C4.95529 3.73535 4.15088 4.54895 4.15088 5.55257C4.15088 6.55619 4.95529 7.36979 5.94759 7.36979Z" fill="#192023"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link write-me__link" href="https://t.me/s_vakoliuk" target="_blank">
+                  <svg class="contacts__icon" fill="#192023" height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                    <path class="contacts__icon" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412
+                      c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22
+                      c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207
+                      c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146
+                      c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link write-me__link" href="https://www.facebook.com/profile.php?id=100006697337265" target="_blank">
+                  <svg class="contacts__icon" width="18" height="18" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="contacts__icon" d="M0.796852 7.19062H2.13719V12.9216C2.13719 13.0348 2.22546 13.1265 2.33441 13.1265H4.60701C4.71596 13.1265 4.80423 13.0348 4.80423 12.9216V7.21763H6.34508C6.44526 7.21763 6.52957 7.13955 6.54101 7.03619L6.77503 4.92633C6.78145 4.86828 6.76375 4.81014 6.72635 4.76659C6.68893 4.72301 6.63536 4.69805 6.57914 4.69805H4.80432V3.37547C4.80432 2.9768 5.011 2.77462 5.41871 2.77462C5.47682 2.77462 6.57914 2.77462 6.57914 2.77462C6.6881 2.77462 6.77636 2.68289 6.77636 2.56979V0.633103C6.77636 0.519947 6.6881 0.428271 6.57914 0.428271H4.97988C4.96861 0.4277 4.94355 0.426758 4.90663 0.426758C4.62915 0.426758 3.66462 0.483336 2.90271 1.21131C2.05852 2.01804 2.17588 2.98394 2.20392 3.15142V4.698H0.796828C0.687878 4.698 0.599609 4.78968 0.599609 4.90284V6.98576C0.599633 7.0989 0.687901 7.19062 0.796852 7.19062Z" fill="#192023"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__join-me join-me" id="join-me">
+        <div class="join-me__container">
+          <div class="join-me__information">
+            <h2 class="join-me__title">Чому саме Я?</h2>
+            <h3 class="join-me__description">
+              Змалечку , йдучи пліч-о-пліч зі спортом, допоможу тобі сформувати корисну звичку, отримати задоволення та побачити бажаний результат.
+            </h3>
+            <div class="join-me__achievements">
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Більше  10 років досвіду в спорті</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Багаторазовий чемпіон України з бодібілдингу</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Тренерський досвід 4 роки</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Понад 500 + результатів та задоволених вихованців</p>
+              </div>
+            </div>
+          </div>
+          <div class="join-me__photos swiper join-me-photos-swiper" style='height: auto;'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2009.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2014.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2015.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2017.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2018.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2021.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2022.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2022-2.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2023.png" alt="Personal training">
+              </div>
+              <div class="swiper-slide">
+                <img class="join-me__photo" src="assets/img/main/join-me/2023-2.png" alt="Personal training">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__results results" id="results">
+        <h2 class="results__title">Результати моїх вихованців</h2>
+        <div class="results__container">
+          <img class="results__quotes" src="./assets/svg/main/results/quotes.svg" alt="Quotes">
+          <div class="results__photo-container swiper results-photo-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-1/photo_2023-12-03_15-03-22.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-1/photo_2023-12-03_15-03-24.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-1/photo_2023-12-03_15-03-29.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-2/photo_2023-12-03_15-03-31.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-2/photo_2023-12-03_15-03-33.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-2/photo_2023-12-03_15-03-35.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-3/photo_2023-12-03_15-03-37.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-3/photo_2023-12-03_15-03-38.jpg" alt="results-weight-loss">
+              </div>
+              <div class="swiper-slide">
+                <img class="results__photo" src="./assets/img/main/results/weight-loss/example-3/photo_2023-12-03_15-03-39.jpg" alt="results-weight-loss">
+              </div>
+            </div>
+          </div>
+          <div class="results__feedback feedback">
+            <div class="swiper results-feedback-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    - 11 кг за 3 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    - 11 кг за 3 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    - 11 кг за 3 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    -17 кг результат за 3.5 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    -17 кг результат за 3.5 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    -17 кг результат за 3.5 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    -11 кг результат за 3 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    -11 кг результат за 3 місяці
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="feedback__title">Мета: схуднення</h3>
+                  <p class="feedback__description">
+                    -11 кг результат за 3 місяці
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__buttons">
+              <button id="swiper-button-prev" class="feedback__button feedback__button--left">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="feedback__button-hover" d="M12.3178 6.49133L1.4165 6.49133" stroke="#f97239" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path class="feedback__button-hover" d="M6.86711 11.8148L1.4165 6.49115L6.86711 1.16748" stroke="#f97239" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button id="swiper-button-next" class="feedback__button feedback__button--right">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="feedback__button-hover" d="M12.3178 6.49133L1.4165 6.49133" stroke="#f97239" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path class="feedback__button-hover" d="M6.86711 11.8148L1.4165 6.49115L6.86711 1.16748" stroke="#f97239" stroke-width="1.36119" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <img class="feedback__sports-things-icon" src="./assets/svg/main/results/sports-things.svg" alt="Sports things">
+          </div>
+        </div>
+      </div>
+      <div class="main__pricing-plan pricing-plan" id="pricing-plan">
+        <div class="pricing-plan__container">
+          <h2 class="pricing-plan__title">Ціни</h2>
+          <h3 id='online-coaching'>Онлайн-ведення</h3>
+          <div class="pricing-plan__cards">
+            <div class="pricing-plan__card">
+              <h3 class="pricing-plan__card-title">12 тренувань</h3>
+              <p class="pricing-plan__card-price">₴2100</p>
+              <div class="pricing-plan__achievements">
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Складання індивідуальної програми тренувань, відштовхуючись від вашої мети</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Відеозвіт  та корегування техніки виконання</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Складання збалансованого плану харчування (щоденний звіт та розбір)</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Аналіз форми (щотижневий звіт форми)</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Консультація щодо спортивного харчування та покращення самочуття</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Завжди на зв'язку</p>
+                </div>
+              </div>
+              <a class="pricing-plan__button" href="https://t.me/s_vakoliuk" target="_blank">Купити зараз</a>
+            </div>
+            <div class="pricing-plan__card">
+              <h3 class="pricing-plan__card-title">8 тренувань</h3>
+              <p class="pricing-plan__card-price">₴1400</p>
+              <div class="pricing-plan__achievements">
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Складання індивідуальної програми тренувань, відштовхуючись від вашої мети</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Відеозвіт  та корегування техніки виконання</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Складання збалансованого плану харчування (щоденний звіт та розбір)</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Аналіз форми (щотижневий звіт форми)</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Консультація щодо спортивного харчування та покращення самочуття</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Завжди на зв'язку</p>
+                </div>
+              </div>
+              <a class="pricing-plan__button" href="https://t.me/s_vakoliuk" target="_blank">Купити зараз</a>
+            </div>
+          </div>
+          <h3 id='online-training'>Без ведення тренера</h3>
+          <div class="pricing-plan__cards">
+            <div class="pricing-plan__card">
+              <h3 class="pricing-plan__card-title">12 тренувань</h3>
+              <p class="pricing-plan__card-price">₴1200</p>
+              <div class="pricing-plan__achievements">
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Індивідуальна програма тренувань під  ваші потреби та наявніcть інвентарю</p>
+                </div>
+              </div>
+              <a class="pricing-plan__button" href="https://t.me/s_vakoliuk" target="_blank">Купити зараз</a>
+            </div>
+            <div class="pricing-plan__card">
+              <h3 class="pricing-plan__card-title">8 тренувань</h3>
+              <p class="pricing-plan__card-price">₴900</p>
+              <div class="pricing-plan__achievements">
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Індивідуальна програма тренувань під  ваші потреби та наявність інвентарю</p>
+                </div>
+              </div>
+              <a class="pricing-plan__button" href="https://t.me/s_vakoliuk" target="_blank">Купити зараз</a>
+            </div>
+          </div>
+          <h3 id='food-program'>Програма  збалансованого харчування</h3>
+          <div class="pricing-plan__cards">
+            <div class="pricing-plan__card">
+              <p class="pricing-plan__card-price">₴950</p>
+              <div class="pricing-plan__achievements">
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Розрахунок БЖВ під ваші потреби</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Складання раціону</p>
+                </div>
+                <div class="pricing-plan__achievement">
+                  <img src="assets/svg/main/pricing-plan/white-checkbox-true.svg" alt="Checkbox">
+                  <p class="pricing-plan__achievement-description">Аналіз вашого фотозвіту їжі та корегування, поради  та інші аспекти</p>
+                </div>
+              </div>
+              <a class="pricing-plan__button" href="https://t.me/s_vakoliuk" target="_blank">Купити зараз</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__join-me join-me" id="personal-trainer-course">
+        <div class="join-me__container">
+          <div class="join-me__information" style='width: auto'>
+            <h2 class="join-me__title">Курс <span style='color: #f97239;'>"Персональний тренер"</span></h2>
+            <h3 class="join-me__description">
+              Вивчення:
+            </h3>
+            <div class="join-me__achievements">
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Основи анатомії та біомеханіки</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Основи нутріціології (cкладання раціону та розрахунок БЖВ)</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Спортивного харчування (тобто дієтичні добавки, вітаміни, тощо)</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Індивідуальний підхід до вихованця</p>
+              </div>
+              <div class="join-me__achievement">
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Складання програми тренувань</p>
+              </div>
+              <div class="join-me__achievement" style='margin-bottom: 20px;'>
+                <img
+                  class="join-me__achievement-checkbox"
+                  src="assets/svg/main/join-me/checkbox.svg"
+                  alt="Checkbox"
+                >
+                <p class="join-me__achievement-description">Практичні навички</p>
+              </div>
+              <p class="pricing-plan__card-price">Ціна: $650</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="main__write-me write-me" id="write-me">
+        <div class="write-me__container">
+          <h2 class="write-me__title">Почни тренування прямо зараз</h2>
+          <p class="write-me__description">Спробувавши безкоштовну програму на тиждень</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link write-me__link" href="https://www.instagram.com/serhii_vakoliuk" target="_blank">
+                <svg class="contacts__icon" width="18" height="18" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="contacts__icon" d="M11.304 3.32916C11.298 2.87084 11.2132 2.41708 11.0533 1.98818C10.9148 1.6264 10.7031 1.29784 10.4318 1.02349C10.1606 0.749144 9.83571 0.535041 9.47801 0.394861C9.0594 0.235926 8.61716 0.149988 8.17011 0.140704C7.59454 0.114684 7.41206 0.107422 5.951 0.107422C4.48994 0.107422 4.30267 0.107422 3.73129 0.140704C3.28445 0.150056 2.84241 0.235994 2.42399 0.394861C2.06624 0.534943 1.74133 0.749012 1.47007 1.02337C1.1988 1.29773 0.98715 1.62634 0.848648 1.98818C0.691193 2.41125 0.606408 2.85843 0.597958 3.3104C0.572231 3.89314 0.564453 4.07771 0.564453 5.55545C0.564453 7.03319 0.564453 7.22199 0.597958 7.8005C0.606933 8.25314 0.691294 8.69973 0.848648 9.12393C0.987382 9.48565 1.19919 9.81413 1.47055 10.0884C1.7419 10.3626 2.06684 10.5766 2.42459 10.7166C2.84186 10.882 3.28398 10.9741 3.73188 10.9889C4.30805 11.015 4.49054 11.0228 5.9516 11.0228C7.41266 11.0228 7.59993 11.0228 8.17131 10.9889C8.61834 10.98 9.06061 10.8943 9.47921 10.7354C9.83681 10.5951 10.1616 10.3809 10.4328 10.1066C10.704 9.83224 10.9158 9.50376 11.0545 9.14208C11.2119 8.71848 11.2963 8.2719 11.3052 7.81865C11.331 7.23651 11.3387 7.05194 11.3387 5.5736C11.3375 4.09586 11.3375 3.90827 11.304 3.32916ZM5.94741 8.34996C4.41934 8.34996 3.18144 7.09793 3.18144 5.55242C3.18144 4.00691 4.41934 2.75488 5.94741 2.75488C6.68099 2.75488 7.38452 3.04962 7.90324 3.57426C8.42196 4.0989 8.71338 4.81047 8.71338 5.55242C8.71338 6.29437 8.42196 7.00594 7.90324 7.53058C7.38452 8.05522 6.68099 8.34996 5.94741 8.34996ZM8.82346 3.30374C8.73874 3.30382 8.65484 3.287 8.57655 3.25425C8.49826 3.22149 8.42713 3.17345 8.36722 3.11285C8.30732 3.05226 8.25981 2.98032 8.22743 2.90114C8.19504 2.82196 8.17841 2.7371 8.17849 2.65141C8.17849 2.56578 8.19517 2.48099 8.22756 2.40189C8.25996 2.32278 8.30745 2.2509 8.36731 2.19035C8.42718 2.1298 8.49824 2.08178 8.57646 2.04901C8.65467 2.01624 8.73851 1.99937 8.82317 1.99937C8.90783 1.99937 8.99166 2.01624 9.06987 2.04901C9.14809 2.08178 9.21916 2.1298 9.27902 2.19035C9.33888 2.2509 9.38637 2.32278 9.41877 2.40189C9.45116 2.48099 9.46784 2.56578 9.46784 2.65141C9.46784 3.01207 9.17946 3.30374 8.82346 3.30374Z" fill="#192023"/>
+                  <path class="contacts__icon" d="M5.94759 7.36979C6.93989 7.36979 7.7443 6.55619 7.7443 5.55257C7.7443 4.54895 6.93989 3.73535 5.94759 3.73535C4.95529 3.73535 4.15088 4.54895 4.15088 5.55257C4.15088 6.55619 4.95529 7.36979 5.94759 7.36979Z" fill="#192023"/>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link write-me__link" href="https://t.me/s_vakoliuk" target="_blank">
+                <svg class="contacts__icon" fill="#192023" height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                  <path class="contacts__icon" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412
+                    c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22
+                    c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207
+                    c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146
+                    c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link write-me__link" href="https://www.facebook.com/profile.php?id=100006697337265" target="_blank">
+                <svg class="contacts__icon" width="18" height="18" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="contacts__icon" d="M0.796852 7.19062H2.13719V12.9216C2.13719 13.0348 2.22546 13.1265 2.33441 13.1265H4.60701C4.71596 13.1265 4.80423 13.0348 4.80423 12.9216V7.21763H6.34508C6.44526 7.21763 6.52957 7.13955 6.54101 7.03619L6.77503 4.92633C6.78145 4.86828 6.76375 4.81014 6.72635 4.76659C6.68893 4.72301 6.63536 4.69805 6.57914 4.69805H4.80432V3.37547C4.80432 2.9768 5.011 2.77462 5.41871 2.77462C5.47682 2.77462 6.57914 2.77462 6.57914 2.77462C6.6881 2.77462 6.77636 2.68289 6.77636 2.56979V0.633103C6.77636 0.519947 6.6881 0.428271 6.57914 0.428271H4.97988C4.96861 0.4277 4.94355 0.426758 4.90663 0.426758C4.62915 0.426758 3.66462 0.483336 2.90271 1.21131C2.05852 2.01804 2.17588 2.98394 2.20392 3.15142V4.698H0.796828C0.687878 4.698 0.599609 4.78968 0.599609 4.90284V6.98576C0.599633 7.0989 0.687901 7.19062 0.796852 7.19062Z" fill="#192023"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <img
+            class="write-me__background-ellipse write-me__background-ellipse--left"
+            src="assets/svg/header/ellipse.svg"
+            alt="ellipse"
+          >
+          <img
+            class="write-me__background-ellipse write-me__background-ellipse--right"
+            src="assets/svg/header/ellipse.svg"
+            alt="ellipse"
+          >
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="footer__contacts contacts">
+          <a class="contacts__logo-link" href="#">
+            <div class="contacts__logo logo">
+              <span class="logo__title">Serhii Vakoliuk</span></span>
+            </div>
+          </a>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://www.instagram.com/serhii_vakoliuk" target="_blank">
+                <svg class="contacts__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="contacts__icon" d="M11.304 3.32916C11.298 2.87084 11.2132 2.41708 11.0533 1.98818C10.9148 1.6264 10.7031 1.29784 10.4318 1.02349C10.1606 0.749144 9.83571 0.535041 9.47801 0.394861C9.0594 0.235926 8.61716 0.149988 8.17011 0.140704C7.59454 0.114684 7.41206 0.107422 5.951 0.107422C4.48994 0.107422 4.30267 0.107422 3.73129 0.140704C3.28445 0.150056 2.84241 0.235994 2.42399 0.394861C2.06624 0.534943 1.74133 0.749012 1.47007 1.02337C1.1988 1.29773 0.98715 1.62634 0.848648 1.98818C0.691193 2.41125 0.606408 2.85843 0.597958 3.3104C0.572231 3.89314 0.564453 4.07771 0.564453 5.55545C0.564453 7.03319 0.564453 7.22199 0.597958 7.8005C0.606933 8.25314 0.691294 8.69973 0.848648 9.12393C0.987382 9.48565 1.19919 9.81413 1.47055 10.0884C1.7419 10.3626 2.06684 10.5766 2.42459 10.7166C2.84186 10.882 3.28398 10.9741 3.73188 10.9889C4.30805 11.015 4.49054 11.0228 5.9516 11.0228C7.41266 11.0228 7.59993 11.0228 8.17131 10.9889C8.61834 10.98 9.06061 10.8943 9.47921 10.7354C9.83681 10.5951 10.1616 10.3809 10.4328 10.1066C10.704 9.83224 10.9158 9.50376 11.0545 9.14208C11.2119 8.71848 11.2963 8.2719 11.3052 7.81865C11.331 7.23651 11.3387 7.05194 11.3387 5.5736C11.3375 4.09586 11.3375 3.90827 11.304 3.32916ZM5.94741 8.34996C4.41934 8.34996 3.18144 7.09793 3.18144 5.55242C3.18144 4.00691 4.41934 2.75488 5.94741 2.75488C6.68099 2.75488 7.38452 3.04962 7.90324 3.57426C8.42196 4.0989 8.71338 4.81047 8.71338 5.55242C8.71338 6.29437 8.42196 7.00594 7.90324 7.53058C7.38452 8.05522 6.68099 8.34996 5.94741 8.34996ZM8.82346 3.30374C8.73874 3.30382 8.65484 3.287 8.57655 3.25425C8.49826 3.22149 8.42713 3.17345 8.36722 3.11285C8.30732 3.05226 8.25981 2.98032 8.22743 2.90114C8.19504 2.82196 8.17841 2.7371 8.17849 2.65141C8.17849 2.56578 8.19517 2.48099 8.22756 2.40189C8.25996 2.32278 8.30745 2.2509 8.36731 2.19035C8.42718 2.1298 8.49824 2.08178 8.57646 2.04901C8.65467 2.01624 8.73851 1.99937 8.82317 1.99937C8.90783 1.99937 8.99166 2.01624 9.06987 2.04901C9.14809 2.08178 9.21916 2.1298 9.27902 2.19035C9.33888 2.2509 9.38637 2.32278 9.41877 2.40189C9.45116 2.48099 9.46784 2.56578 9.46784 2.65141C9.46784 3.01207 9.17946 3.30374 8.82346 3.30374Z" fill="#192023"/>
+                  <path class="contacts__icon" d="M5.94759 7.36979C6.93989 7.36979 7.7443 6.55619 7.7443 5.55257C7.7443 4.54895 6.93989 3.73535 5.94759 3.73535C4.95529 3.73535 4.15088 4.54895 4.15088 5.55257C4.15088 6.55619 4.95529 7.36979 5.94759 7.36979Z" fill="#192023"/>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://t.me/s_vakoliuk" target="_blank">
+                <svg class="contacts__icon" fill="#192023" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                  <path class="contacts__icon" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412
+                    c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22
+                    c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207
+                    c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146
+                    c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://www.facebook.com/profile.php?id=100006697337265" target="_blank">
+                <svg class="contacts__icon" width="8" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="contacts__icon" d="M0.796852 7.19062H2.13719V12.9216C2.13719 13.0348 2.22546 13.1265 2.33441 13.1265H4.60701C4.71596 13.1265 4.80423 13.0348 4.80423 12.9216V7.21763H6.34508C6.44526 7.21763 6.52957 7.13955 6.54101 7.03619L6.77503 4.92633C6.78145 4.86828 6.76375 4.81014 6.72635 4.76659C6.68893 4.72301 6.63536 4.69805 6.57914 4.69805H4.80432V3.37547C4.80432 2.9768 5.011 2.77462 5.41871 2.77462C5.47682 2.77462 6.57914 2.77462 6.57914 2.77462C6.6881 2.77462 6.77636 2.68289 6.77636 2.56979V0.633103C6.77636 0.519947 6.6881 0.428271 6.57914 0.428271H4.97988C4.96861 0.4277 4.94355 0.426758 4.90663 0.426758C4.62915 0.426758 3.66462 0.483336 2.90271 1.21131C2.05852 2.01804 2.17588 2.98394 2.20392 3.15142V4.698H0.796828C0.687878 4.698 0.599609 4.78968 0.599609 4.90284V6.98576C0.599633 7.0989 0.687901 7.19062 0.796852 7.19062Z" fill="#192023"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav nav">
+          <div class="nav__block">
+            <h4 class="nav__title">Ціни</h4>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#online-coaching">
+                  <p class="nav__item-title">Онлайн ведення</p>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#online-training">
+                  <p class="nav__item-title">Без ведення тренера</p>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#food-program">
+                  <p class="nav__item-title">Програма збалансованого харчування</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__block">
+            <h4 class="nav__title">Навігація</h4>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  <p class="nav__item-title">Головна</p>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#personal-trainer-course">
+                  <p class="nav__item-title">Програми</p>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#pricing-plan">
+                  <p class="nav__item-title">Ціни</p>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#results">
+                  <p class="nav__item-title">Відгуки</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>

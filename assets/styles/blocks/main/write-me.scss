@@ -1,0 +1,92 @@
+.write-me {
+  &__container {
+    @include container();
+    padding: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      300deg,
+      rgba(1,5,13,1) 50%,
+      rgba(35,47,63,1) 80%,
+      rgba(28,44,64,1) 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+
+    @include onTablet {
+      padding: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 30px;
+
+    @include onTablet {
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 20px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #f97239;
+
+    @include onTablet {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  &__form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  &__input {
+    width: 250px;
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid #9dad9a;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #fff;
+
+    &:hover {
+      border-color: #f97239;
+    }
+  }
+
+  &__background-ellipse {
+    position: absolute;
+
+    &--left {
+      top: -18px;
+      right: 15%;
+      transform: rotate(90deg);
+    }
+
+    &--right {
+      bottom: -17px;
+      left: 15%;
+      transform: rotate(270deg);
+    }
+  }
+}

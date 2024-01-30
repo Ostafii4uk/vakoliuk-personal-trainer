@@ -1,0 +1,39 @@
+.navigation {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  z-index: 100;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+    list-style: none;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__link {
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    transition: all 0.1s linear;
+
+    &:hover {
+      color: #f97239;
+      border: 1px solid #f97239;
+      border-radius: 4px;
+    }
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}

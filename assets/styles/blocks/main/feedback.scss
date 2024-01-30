@@ -1,0 +1,94 @@
+.feedback {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  &__description {
+    position: relative;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__sports-things-icon {
+    position: absolute;
+    top: 35px;
+    right: 90px;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+    bottom: 25%;
+    z-index: 100;
+    display: flex;
+    gap: 30px;
+
+    @include onTablet {
+      position: static;
+    }
+  }
+
+  &__button-hover {
+    transition: all 0.2s linear;
+  }
+
+  &__button {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f97239;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f97239;
+
+      .feedback__button-hover {
+        stroke: #2a2c52;
+      }
+
+      @media (max-width: 968px) {
+        background-color: transparent;
+
+        .feedback__button-hover {
+          stroke: #f97239;
+        }
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+
+      .feedback__button-hover {
+        stroke: #f97239;
+      }
+
+      @media (max-width: 968px) {
+        background-color: #f97239;
+
+        .feedback__button-hover {
+          stroke: #2a2c52;
+        }
+      }
+    }
+
+    &--right {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  &__title {
+    color: #f97239;
+  }
+}

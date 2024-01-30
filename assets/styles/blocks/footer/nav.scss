@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include onTablet {
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    display: inline-flex;
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #e7e0e0;
+    transition: all 0.1s linear;
+
+    &:hover {
+      color: #f97239;
+    }
+  }
+}
